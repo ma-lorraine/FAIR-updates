@@ -1,0 +1,13 @@
+--- FAIRfigure.m	2015-09-22 12:36:22.281512000 -0400
++++ FAIRfigure_2015a.m	2015-09-23 11:58:27.242778000 -0400
+@@ -22,8 +22,8 @@
+ end;
+ 
+ fig      = figure(fig); 
+-figname  = sprintf('[FAIR:%d] %s',fig,figname);
+-position = FAIRposition('fig',fig,'position',position);
++figname  = sprintf('[FAIR:%d] %s',fig.Number,figname);
++position = FAIRposition('fig',fig.Number,'position',position);
+ set(fig,'numbertitle','off','name',figname,'color',color,'position',position);
+ if nargout == 1, varargout = {fig};  end;
+ 

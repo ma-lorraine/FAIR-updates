@@ -1,0 +1,11 @@
+--- FAIRplots.m	2011-08-10 12:05:46.000000000 -0400
++++ FAIRplots_2015a.m	2015-09-29 14:28:48.215596000 -0400
+@@ -273,7 +273,7 @@
+     if ~isempty(plotOptn.position),
+       pos = plotOptn.position;
+     else
+-      pos = FAIRposition('fig',fig);
++      pos = FAIRposition('fig',fig.Number);
+     end;
+     FAIRfigure(fig,...
+       'figname',plotOptn.figname(omega,m),...
